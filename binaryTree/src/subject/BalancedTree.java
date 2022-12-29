@@ -2,13 +2,15 @@ package subject;
 
 import model.TreeNode;
 
+import java.io.Serializable;
+
 /**
  * @author junius
  * @date 2022/12/02 20:18
  * 平衡二叉树
  **/
 public class BalancedTree {
-    static class Info{
+    static class Info implements Serializable {
         public boolean isBalance;
         public int height;
         public Info(boolean isBalance, int height){
